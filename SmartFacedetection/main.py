@@ -46,8 +46,12 @@ cv2.setMouseCallback('Window', on_mouse)
 while True:
     successful_frame_read, frame = webcam.read()
     detect_face_and_save_screenshot(frame, train_data, mouse_dragged)
+<<<<<<< HEAD
     cv2.imshow('Window', frame)
     key = cv2.waitKey(1)
+=======
+    cv2.imshow('Window', frame)    key = cv2.waitKey(1)
+>>>>>>> 8c37cc3 (Initial commit)
     if key == 81 or key == 113 or key == 27:
         break
 
